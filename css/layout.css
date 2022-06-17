@@ -1,11 +1,11 @@
-/*--GENERIC RULE--*/
+/*===GENERIC RULE===*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*flex rule*/
+/*===START FLEX RULE===*/
 .flex{
     display: flex;
 }
@@ -14,10 +14,22 @@
     justify-content: space-between;
 }
 
+.jc-sa{
+    justify-content: space-around;
+}
+
 .fd-col{
     flex-direction: column;
 }
-/*flex rule*/
+
+.ai-center{
+    align-items: center;
+}
+/*===END FLEX RULE===*/
+
+.float-r{
+    float: right;
+}
 
 li{
     list-style: none;
@@ -27,9 +39,9 @@ a{
     text-decoration: none;
 }
 
-/*--MAIN--*/
+/*===MAIN===*/
 
-/*--SECTION NAV--*/
+/*===SECTION NAV===*/
 .nav, .contents{    
     height: calc(100vh - 85px);
 }
@@ -49,13 +61,23 @@ a{
 }
 
 
-/*--SECTION CONTENTS--*/
+/*===SECTION CONTENTS===*/
 .contents{
     width: 100%;
     background-color: blueviolet; /*temp*/
 }
 
+
+/*===SECTION FOOTER===*/
 .control-panel{
     height: 85px;
     background-color: tomato; /*temp*/
+}
+
+.play-now div{
+    padding: 0 0.5rem;
+}
+
+.play-now div img{
+    width: 20px;
 }
