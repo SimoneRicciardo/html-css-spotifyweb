@@ -1,0 +1,61 @@
+/*--GENERIC RULE--*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*flex rule*/
+.flex{
+    display: flex;
+}
+
+.jc-sb{
+    justify-content: space-between;
+}
+
+.fd-col{
+    flex-direction: column;
+}
+/*flex rule*/
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*--MAIN--*/
+
+/*--SECTION NAV--*/
+.nav, .contents{    
+    height: calc(100vh - 85px);
+}
+
+.nav{
+    width: 250px;
+    background-color: rgb(0, 255, 179); /*temp*/
+}
+
+.link-nav, .user-nav{
+    padding: 0 1rem;
+} 
+
+.link-nav h3, .link-nav div, .link-nav ul, .link-nav ul li, .user-nav p{
+    padding: 0.5rem 0;
+    font-size: 15px;
+}
+
+
+/*--SECTION CONTENTS--*/
+.contents{
+    width: 100%;
+    background-color: blueviolet; /*temp*/
+}
+
+.control-panel{
+    height: 85px;
+    background-color: tomato; /*temp*/
+}
