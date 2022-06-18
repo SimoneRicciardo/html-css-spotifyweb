@@ -18,6 +18,10 @@
     justify-content: space-around;
 }
 
+.jc-fe{
+    justify-content: flex-end;
+}
+
 .fd-col{
     flex-direction: column;
 }
@@ -25,6 +29,15 @@
 .ai-center{
     align-items: center;
 }
+
+.jc-center{
+    justify-content: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
 /*===END FLEX RULE===*/
 
 .float-r{
@@ -39,12 +52,15 @@ a{
     text-decoration: none;
 }
 
+
 /*===MAIN===*/
 
-/*===SECTION NAV===*/
 .nav, .contents{    
     height: calc(100vh - 85px);
 }
+
+
+/*===SECTION NAV===*/
 
 .nav{
     width: 250px;
@@ -65,8 +81,57 @@ a{
 .contents{
     width: 100%;
     background-color: blueviolet; /*temp*/
+    overflow: overlay;
 }
 
+.pippo{
+    height: 80px;
+    background-color: green; /*TEMP*/
+    position: sticky;
+    top: 0;
+}
+
+.btn-upgrade{
+    padding: 1rem 1.5rem;
+    border: solid black; /*TEMP*/
+    border-radius: 30px;
+
+}
+
+.categories ul li{
+    padding: 1rem;
+    font-size: 13px;
+}
+
+.albums{
+    padding: 1rem 1rem;
+}
+
+.recent-play h2, 
+.card h4, 
+.created-user h2, 
+.created-user p,
+.most-popular h2,
+.most-popular p{
+    margin: 0.5rem ;
+}
+
+.card{
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.created-user, .most-popular{
+    margin-top: 1rem;
+}
+
+.most-popular .card img{
+    border-radius: 50%;
+}
 
 /*===SECTION FOOTER===*/
 .control-panel{
@@ -74,10 +139,10 @@ a{
     background-color: tomato; /*temp*/
 }
 
-.play-now div{
-    padding: 0 0.5rem;
+.play-now div{   
+    padding: 0.5em 0.5rem;
 }
 
 .play-now div img{
-    width: 20px;
+    width: 50px;
 }
