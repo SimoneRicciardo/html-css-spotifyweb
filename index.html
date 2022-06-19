@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>spotifyweb</title>
 </head>
 <body>
@@ -16,20 +17,20 @@
 
             <div class="link-nav">
 
-                <h3>TITLE</h3>
+                <img id="img-logo" src="img/logo.svg" alt="logo">
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Cerca</a></li>
-                    <li><a href="#">La tua libreria</a></li>
+                    <li><a class="flex ai-center select-home font-w" href="#"><img src="img/home.svg" alt="home"><span>Home</span></a></li>
+                    <li><a class="flex ai-center font-grey" href="#"><img src="img/search.svg" alt="search"><span>Cerca</span></a></li>
+                    <li><a class="flex ai-center font-grey" href="#"><img src="img/libreria.svg" alt="home"><span>La tua libreria</span></a></li>
                 </ul>
 
                 <div>
-                    <h4>Playlist</h4>
-                    <a href="#">Crea Playlist</a>
+                    <h4 class="font-w">Playlist</h4>
+                    <div><a class="flex ai-center font-grey" href="#"><i class="fa-solid fa-square-plus"></i><span> Crea Playlist</span></a></div>
                 </div>
 
-                <ul>
+                <ul id="playlist-name">
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
@@ -43,11 +44,9 @@
 
             <div class="user-nav">
 
-                <p><a href="#">Installa app</a></p>
+                <div id="download-app"><a class="flex ai-center font-grey" href="#"><img src="img/download.svg" alt="download app"><span> Installa app</span></a></div>
 
-                <hr>
-
-                <p>John Doe</p>
+                <div class="flex ai-center font-w profile-nav"><img src="img/profile.svg" alt="profile"><span> John Doe</span></div>
             
             </div>
 
@@ -55,7 +54,7 @@
 
         <section class="contents">
 
-            <div class="pippo flex ai-center jc-fe"> <!--TEMP!!-->
+            <div class="bar-btn flex ai-center jc-fe"> <!--TEMP!!-->
                 <div class="btn-upgrade">
                     <a href="#">EFFETTUA L'UPGRADE</a>
                 </div>

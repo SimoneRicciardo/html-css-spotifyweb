@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: sans-serif;
+}
+
 /*===START FLEX RULE===*/
 .flex{
     display: flex;
@@ -63,16 +67,21 @@ a{
 /*===SECTION NAV===*/
 
 .nav{
-    width: 250px;
-    background-color: rgb(0, 255, 179); /*temp*/
+    width: 270px;
+    background-color: black;
 }
 
 .link-nav, .user-nav{
     padding: 0 1rem;
+    margin-right: 5rem;
 } 
 
-.link-nav h3, .link-nav div, .link-nav ul, .link-nav ul li, .user-nav p{
-    padding: 0.5rem 0;
+.user-nav{
+    margin-right: 0;
+}
+
+.link-nav h3, .link-nav div, .link-nav ul, .link-nav #playlist-name li, .user-nav div, .user-nav p, .nav img{
+    padding: 0.3rem 0;
     font-size: 15px;
 }
 
@@ -84,7 +93,7 @@ a{
     overflow: overlay;
 }
 
-.pippo{
+.bar-btn{
     height: 80px;
     background-color: green; /*TEMP*/
     position: sticky;
