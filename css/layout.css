@@ -95,6 +95,7 @@ a{
 
 /*==SECTION CTA==*/
 .cta{
+    padding-right: 20px;
     height: 90px;
     background-color: rgb(8, 11, 18);
     position: sticky;
@@ -172,4 +173,8 @@ a{
 
 .play-now div p{
     font-size: 13px;
+}
+
+.player{
+    flex-grow: 1;
 }
