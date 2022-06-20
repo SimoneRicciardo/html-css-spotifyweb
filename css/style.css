@@ -8,9 +8,16 @@
     color: rgb(111, 111, 111);
 }
 
+:root{
+    --grey-color: rgb(111, 111, 111);
+    --white-color: rgb(255, 255, 255);
+}
+
 /*==MAIN==*/
 
 /*==SECTION NAV==*/
+
+/*--SECTION LINK-NAV--*/
 .link-nav ul li a img{
     width: 25px;
     margin-right: 0.2rem;
@@ -38,14 +45,84 @@
 }
 
 .link-nav #playlist-name li a{
-    color: rgb(111, 111, 111);
+    color: var(--grey-color);
 }
 
+
+/*--SECTION USER-NAV--*/
 #download-app{
-    border-bottom: 0.5px solid rgb(111, 111, 111);
+    border-bottom: 0.5px solid var(--grey-color);
 }
 
 .profile-nav img{
-    background-color: rgb(111, 111, 111);
+    background-color: var(--grey-color);
     border-radius: 50%;
 }
+
+/*==SECTION CONTENTS==*/
+.categories ul li a hr{
+    border: solid 1px rgb(161, 237, 46);
+    border-radius: 30px;
+    margin: 0 15px;
+    display: none;
+}
+
+.card p, .created-user p, .most-popular p{
+    color: var(--grey-color);
+}
+
+
+/*==FOOTER==*/
+.icon-play-now i{
+    padding: 0 0.2rem;
+}
+
+.player div i{
+    margin: 0 1.2rem;
+    font-size: 18px;
+}
+
+.rule-l-player, .rule-l-volume{   
+    height: 3px;
+    background-color: var(--grey-color);
+    margin: 0.5rem 1.5rem;
+}
+
+.rule-l-player{
+    width: 500px;
+}
+
+.rule-l-volume{
+    width: 100px;
+}
+
+.rule-s{
+    width: 25%;
+    height: 3px;
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.dot{
+    display: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: absolute;
+    top: -4.5px;
+    right: -1%;
+}
+
+.command-player i{
+    padding: 0 0.5rem;
+    font-size: 13px;
+}
+
+.fa-play{
+    padding: 0.3rem;
+    border: solid 2px;
+    border-radius: 50%;
+}
+
+

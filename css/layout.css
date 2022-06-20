@@ -89,29 +89,42 @@ a{
 /*===SECTION CONTENTS===*/
 .contents{
     width: 100%;
-    background-color: blueviolet; /*temp*/
+    background-color: rgb(20, 25, 34);
     overflow: overlay;
 }
 
-.bar-btn{
-    height: 80px;
-    background-color: green; /*TEMP*/
+/*==SECTION CTA==*/
+.cta{
+    height: 90px;
+    background-color: rgb(8, 11, 18);
     position: sticky;
     top: 0;
 }
 
 .btn-upgrade{
-    padding: 1rem 1.5rem;
-    border: solid black; /*TEMP*/
+    padding: 0.8rem 1.7rem;
+    border: solid white;
     border-radius: 30px;
-
 }
 
+.btn-upgrade a{
+    color: var(--white-color);
+}
+
+
+/*==SECTION CATEGORIES==*/ 
 .categories ul li{
     padding: 1rem;
     font-size: 13px;
+    font-weight: bold;
 }
 
+.categories ul li a{
+    color: var(--grey-color);
+}
+
+
+/*==SECTION ALBUM==*/
 .albums{
     padding: 1rem 1rem;
 }
@@ -128,6 +141,7 @@ a{
 .card{
     text-align: center;
     padding: 1rem 0.5rem;
+    width: calc(100% / 6);
 }
 
 .card img{
@@ -145,7 +159,7 @@ a{
 /*===SECTION FOOTER===*/
 .control-panel{
     height: 85px;
-    background-color: tomato; /*temp*/
+    background-color: rgb(40, 40, 40);
 }
 
 .play-now div{   
@@ -154,4 +168,8 @@ a{
 
 .play-now div img{
     width: 50px;
+}
+
+.play-now div p{
+    font-size: 13px;
 }
