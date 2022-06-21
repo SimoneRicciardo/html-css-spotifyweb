@@ -59,6 +59,10 @@
     border-radius: 50%;
 }
 
+.link-nav{
+    overflow: hidden;
+}
+
 /*==SECTION CONTENTS==*/
 .categories ul li a hr{
     border: solid 1px rgb(161, 237, 46);
@@ -78,7 +82,7 @@
 }
 
 .player div i{
-    margin: 0 1.2rem;
+    margin: 0 0.6rem;
     font-size: 18px;
 }
 
@@ -126,8 +130,14 @@
 }
 
 /*==MEDIA QUERY==*/
-@media screen and (max-width: 991px) {
-    .recent-play .container-cards .card{
+@media screen and (max-width: 991px){
+    .container-cards .card{
         width: calc(100% / 4);
     }
 }    
+
+@media screen and (max-width: 576px){
+    .container-cards .card{
+        width: calc(100% / 2);
+    }
+}
