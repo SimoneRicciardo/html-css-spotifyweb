@@ -18,12 +18,13 @@
 
             <div class="link-nav">
 
-                <img id="img-logo" src="img/logo.svg" alt="logo">
+                <img class="img-logo logo-big" src="img/logo.svg" alt="logo">
+                <img class="img-logo logo-small" src="img/logo-small.svg" alt="logo">
 
                 <ul>
                     <li><a class="flex ai-center select-home font-w" href="#"><img src="img/home.svg" alt="home"><span>Home</span></a></li>
-                    <li><a class="flex ai-center font-grey" href="#"><img src="img/search.svg" alt="search"><span>Cerca</span></a></li>
-                    <li><a class="flex ai-center font-grey" href="#"><img src="img/libreria.svg" alt="home"><span>La tua libreria</span></a></li>
+                    <li><a class="flex ai-center select-home font-grey" href="#"><img src="img/search.svg" alt="search"><span>Cerca</span></a></li>
+                    <li><a class="flex ai-center select-home font-grey" href="#"><img src="img/libreria.svg" alt="home"><span>La tua libreria</span></a></li>
                 </ul>
 
                 <div>
@@ -83,43 +84,72 @@
                     <div class="container-cards flex wrap">
 
                         <div class="card">
-
-                            <img src="img/metal_lifting.jpg" alt="album">
-                            <h4>Heavy Metal</h4>
-                            <p>Subtitile</p>
-
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/metal_lifting.jpg" alt="album">
+                            </div>   
+                                <h4>Heavy Metal</h4>
+                                <p>Subtitile</p>
+                            
                         </div>
                         <div class="card">
 
-                            <img src="img/stranger.jpeg" alt="album">
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/stranger.jpeg" alt="album">
+                            </div>   
                             <h4>Stranger Things,vol1 (a Netflix Original Series Soundtrak)</h4>
                             <p>Kyle Dixon &#38 Michael Stein</p>
 
                         </div>
                         <div class="card">
 
-                            <img src="img/aquietplace.jpeg" alt="album">
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/aquietplace.jpeg" alt="album">
+                            </div>   
                             <h4>A quite place</h4>
                             <p>Subtitile</p>
 
                         </div>
                         <div class="card">
 
-                            <img src="img/split.jpeg" alt="album">
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/split.jpeg" alt="album">
+                            </div>   
                             <h4>Split</h4>
                             <p>Subtitile</p>
 
                         </div>
                         <div class="card">
 
-                            <img src="img/cure.jpeg" alt="album">
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/cure.jpeg" alt="album">
+                            </div>   
                             <h4>A cure for wellness</h4>
                             <p>Subtitile</p>
 
                         </div>
                         <div class="card">
 
-                            <img src="img/Imagine Dragons.jpg" alt="album">
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/Imagine Dragons.jpg" alt="album">
+                            </div>   
                             <h4>Imagine Dragons</h4>
                             <p>Origins</p>
 
@@ -139,13 +169,23 @@
 
                         <div class="card">
 
-                            <img src="img/radar.jpeg" alt="album">
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/radar.jpeg" alt="album">
+                            </div>   
                             <h4>Relese Radar</h4>
 
                         </div>
                         <div class="card">
 
-                            <img src="img/mixdaily.jpeg" alt="album">
+                            <div class="container-img-card">
+                                <div class="overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/mixdaily.jpeg" alt="album">
+                            </div>   
                             <h4>Daily Mix 1</h4>
 
                         </div>
@@ -164,13 +204,23 @@
 
                         <div class="card">
 
-                            <img src="img/Imagine Dragons.jpg" alt="metal">
+                            <div class="container-img-card">
+                                <div class="overlay ov-circle">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/Imagine Dragons.jpg" alt="album">
+                            </div>   
                             <h4>Imagine Dragons</h4>
 
                         </div>
                         <div class="card">
 
-                            <img src="img/einaudi.jpeg" alt="metal">
+                            <div class="container-img-card">
+                                <div class="overlay ov-circle">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <img src="img/einaudi.jpeg" alt="album">
+                            </div>   
                             <h4>Ludovico Einaudi</h4>
 
                         </div>
@@ -188,14 +238,20 @@
     <footer class="control-panel flex jc-sb">
 
         <div class="play-now flex ai-center">
-            <div>
-                <img src="img/Imagine Dragons.jpg" alt="album play now">
-                <div class="float-r ai-center">
+
+            <div class="container-cover-name flex ai-center">
+
+                <div class="cover-img">
+                    <img src="img/Imagine Dragons.jpg" alt="album play now">
+                </div>
+
+                <div class="name-album">
                     <p class="font-w">Imagine Dragons</p>
                     <p class="font-grey">Birds</p>
                 </div>
+
             </div>
-            
+
             <div class="icon-play-now font-grey">
                 <i class="far fa-heart"></i>
                 <i class="far fa-folder"></i>
@@ -224,10 +280,12 @@
         </div>
         
         <div class="command-player flex ai-center font-w">
+            <div class="flex ai-center">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
 
-            <i class="fa-solid fa-list-ul"></i>
-            <i class="fa-solid fa-display"></i>
-            <i class="fa-solid fa-volume-high"></i>
             <div class="rule-l-volume">
                 <div class="rule-s">
                     <span class="dot"></span>

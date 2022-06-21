@@ -26,8 +26,10 @@
 .select-home{
     margin-left: -16px;
     padding-left: 0.8rem;
-    border-left: solid 2px rgb(137, 200, 37);
+    border-left: solid 2px rgb(0, 0, 0);
 }
+
+                                            /*rgb(137, 200, 37)*/
 
 #img-logo, .link-nav div{
     margin-top: 0.5rem;
@@ -70,10 +72,9 @@
 
 /*==SECTION CONTENTS==*/
 .categories ul li a hr{
-    border: solid 1px rgb(161, 237, 46);
+    border: solid 1px transparent;
     border-radius: 30px;
     margin: 0 15px;
-    display: none;
 }
 
 .card p, .created-user p, .most-popular p{
@@ -135,14 +136,69 @@
 }
 
 /*==MEDIA QUERY==*/
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px){
     .container-cards .card{
         width: calc(100% / 4);
     }
 }    
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
     .container-cards .card{
         width: calc(100% / 2);
     }
+}
+
+@media screen and (max-width: 576px){
+    .command-player{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .command-player .rule-l-volume{
+        width: 100%;
+    }
+
+    .logo-small{
+        display: inline-block;
+        width: 90%;
+    }
+
+    .link-nav ul li a span, 
+    .logo-big, .link-nav div, 
+    #playlist-name,
+    .user-nav div span{
+        display: none;
+        
+    }
+
+    #download-app{
+        border: none;
+    }
+
+    .nav{
+        width: 70px;
+    }
+}
+
+/*==HOVER==*/
+.container-img-card:hover .overlay{
+    display: block;
+}
+
+.btn-upgrade:hover{
+    transition: 0.3s linear;
+    font-size: 17px;
+}
+
+.categories ul li:hover a{
+    color: var(--white-color);
+}
+
+.categories ul li:hover hr{
+    border-color: rgb(161, 237, 46);
+    transition: 0.5s;
+}
+
+.icon-play-now i:hover{
+    color: var(--white-color);
 }

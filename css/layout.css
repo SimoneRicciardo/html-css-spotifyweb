@@ -76,8 +76,12 @@ a{
     padding: 0 1rem;
 } 
 
-#img-logo{
+.img-logo{
     width: 50%;
+}
+
+.logo-small{
+    display: none;
 }
 
 .user-nav{
@@ -115,6 +119,7 @@ a{
     padding: 0.8rem 1.7rem;
     border: solid white;
     border-radius: 30px;
+    font-size: 15px;
 }
 
 .btn-upgrade a{
@@ -155,8 +160,32 @@ a{
     width: calc(100% / 6);
 }
 
+.container-img-card{
+    position: relative;
+}
+
+.overlay{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(78, 78, 78, 0.63);
+}
+
+.ov-circle{
+    border-radius: 50%;
+}
+
+.overlay .fa-play{
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    position: absolute;
+    font-size: 30px;
+}
+
 .card img{
     width: 100%;
+    display:block;
 }
 
 .created-user, .most-popular{
@@ -174,17 +203,42 @@ a{
 }
 
 .play-now div{   
-    padding: 0.5em 0.5rem;
-}
-
-.play-now div img{
-    width: 50px;
-}
+    padding: 0 0.2rem;
+}    
 
 .play-now div p{
     font-size: 13px;
 }
 
+.container-cover-name{
+    height: 100%;
+    width: 100%;
+}
+
+.cover-img, .name-album{
+    width: 100%;
+}
+
+.cover-img img{
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 35px;
+    min-height: 35px;
+    width: 100%;
+}
+
 .player{
-    flex-grow: 1;
+    width: 50%;
+}
+
+.icon-play-now{
+    width: 30%;
+}
+
+.play-now, .command-player{
+    width: 20%;
+}
+
+.command-player{
+    justify-content: end;
 }
