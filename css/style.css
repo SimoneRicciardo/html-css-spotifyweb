@@ -61,6 +61,11 @@
 
 .link-nav{
     overflow: hidden;
+    min-height: 245px;
+}
+
+.nav{
+    overflow: hidden;
 }
 
 /*==SECTION CONTENTS==*/
