@@ -1,0 +1,113 @@
+/*==MEDIA QUERY==*/
+@media screen and (max-width: 992px){
+    .container-cards .card{
+        width: calc(100% / 4);
+    }
+}    
+
+@media screen and (max-width: 768px){
+    .container-cards .card{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .command-player{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .command-player .rule-l-volume{
+        width: 100%;
+    }
+
+    .logo-small{
+        display: inline-block;
+        width: 90%;
+    }
+
+    .link-nav ul li a span, 
+    .logo-big, .link-nav div, 
+    #playlist-name,
+    .user-nav div span{
+        display: none;
+        
+    }
+
+    #download-app{
+        border: none;
+    }
+
+    .nav{
+        width: 70px;
+    }
+}
+
+/*==HOVER==*/
+.container-img-card:hover .overlay{
+    display: block;
+}
+
+.btn-upgrade:hover{
+    transition: 0.3s linear;
+    font-size: 17px;
+}
+
+.categories ul li:hover a{
+    color: var(--white-color);
+}
+
+.categories ul li:hover hr{
+    border-color: rgb(161, 237, 46);
+    transition: 0.5s;
+}
+
+.icon-play-now i:hover{
+    color: var(--white-color);
+}
+
+.player .fa-play:hover {
+    margin: 0 0.5rem;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.command-player div i:hover{
+    color: var(--grey-color);
+} 
+
+.rule-l-player:hover .dot{
+    display: block;
+    background-color: rgb(161, 237, 46);
+}
+
+.rule-l-player:hover .rule-s{
+    background-color: rgb(161, 237, 46);
+}
+
+.rule-l-volume:hover .dot{
+    display: block;
+    background-color: rgb(161, 237, 46);
+}
+
+.rule-l-volume:hover .rule-s{
+    background-color: rgb(161, 237, 46);
+}
+
+.link-nav ul li:hover a{
+    color: var(--white-color);
+    border-left-color: rgb(137, 200, 37);
+    transition: 0.3s;
+}
+
+.link-nav div div:hover a{
+    color: var(--white-color);
+}
+
+#playlist-name li:hover a{
+    color: var(--white-color);
+}
+
+#download-app:hover a{
+    color: var(--white-color);
+}
